@@ -63,13 +63,16 @@ else if (window.attachEvent)
 		</ul>
 	</DIV>
 	<DIV id="core">
-		<form id="sort_by_menu">
-			<span id="sort_by_menu_scroll"> 
-				<intput type="radio" name="sort_type" value="price" checked>Sort by Price <br></intput>
-				<intput type="radio" name="sort_type" value="new">Sort by Newest First <br></intput>
-				<intput type="radio" name="sort_type" value="price">Sort by Oldest First <br></intput>
-			</span>
-		</form>
+		<DIV>
+			<form id="sort_by_form" action="sort_by.php" method="post">
+				<select id ="sort_by" name="sort_by">
+					<option selected value="prix" checked>Tri par prix</option>
+					<option value="new_first" checked>Tri par nouveau en premier</option>
+					<option value="old_first" checked>Tri par ancien en premier</option>
+				</select>
+				<input id ="sort_by_submit" type="submit" value="Trier"/>
+			</form>	
+		</DIV>
 		<DIV class="content"></DIV>
 		<DIV class="content"></DIV>
 		<DIV class="content"></DIV>
