@@ -115,15 +115,7 @@ if ($_GET)
 	else
 		$objects = r0f_dbselect("SELECT PRODUCT.*, P_BRAND.* FROM PRODUCT, P_BRAND WHERE PRODUCT.p_brand_id = P_BRAND.pb_id AND PRODUCT.p_type_id = '".$_SESSION['type_filter']."' ORDER BY ".$order.";");
 	foreach ($objects as $car)
-		echo "<a href='description.php?id=".$car['p_id'].
-			"&brand=".$car['pb_name'].
-			"&name=".$car['p_name'].
-			"&price=".$car['p_price'].
-			"&topspeed=".$car['p_topspeed'].
-			"&acceleration=".$car['p_acceleration'].
-			"&brake=".$car['p_brake'].
-			"&traction=".$car['p_traction'].
-			"&img=".$car['p_image']."'><DIV class='content'><img src='".$car['p_image']."'></img><span class='brandname'>".$car['pb_name']."</span><span class='carname'>".$car['p_name']."</span><span class='price'>$&nbsp;".$car['p_price']."</DIV></a>";
+		echo "<a href='description.php/?id=".$car['p_id']."'><DIV class='content'><img src='".$car['p_image']."'></img><span class='brandname'>".$car['pb_name']."</span><span class='carname'>".$car['p_name']."</span><span class='price'>$&nbsp;".$car['p_price']."</DIV></a>";
 ?>	
 	</DIV>
 </BODY>

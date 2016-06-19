@@ -6,6 +6,7 @@ function r0f_dbselect($query)
 	$connection = r0f_dbconnect();
 	if (mysqli_connect_errno())
 		return (-1);
+//	$query = mysqli_real_escape_string($connection, $query);
 	if ($result = mysqli_query($connection, $query))
 	{
 		if (mysqli_num_rows($result) == 0)

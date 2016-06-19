@@ -92,7 +92,7 @@ session_start();
 	if ($_GET['color'])
         echo "<a href='r0_add2cart.php?".$gets."&color=".$_GET['color']."'><DIV id ='description_order'>Order<img id='description_panier_black' src='sources/images/panier_black.jpg' /></DIV></a>";
     else
-        echo "<DIV id ='description_pick_color'>Pick a color</DIV>";
+        echo "<DIV id ='description_order'>Pick a color<img id='description_panier_black' src='sources/images/panier_black.jpg' /></DIV>";
 ?>
  </body>
 </html>
