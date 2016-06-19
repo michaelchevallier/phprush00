@@ -18,7 +18,7 @@ if ($_GET)
 </HEAD>
 <BODY>
 	<DIV id="banner">
-		<img id="banner_img" SRC = "sources/images/banner-img.png" alt="Legendary Motorsport"/>
+		<a href="index.php"><img id="banner_img" SRC = "sources/images/banner-img.png" alt="Legendary Motorsport"/></a>
 		<ul id="panier_menu"><a href="panier.php">Panier<img id="panier_black_menu" src="sources/images/panier_black.jpg"></a></ul>
 		<ul id="body_menu">
 			<li id="connexion">Connexion
@@ -39,7 +39,7 @@ if ($_GET)
                       <td><input type='submit' name='submit' value='OK' /></td></tr>
                     </table>
                   </form>
-               <li id='new_account_link'><a href='#'>Cr&eacute;er un nouveau compte</a>
+               <li id='new_account_link'><a href='create_account.php'>Cr&eacute;er un nouveau compte</a>
                  </ul>
             </li>";
     }
