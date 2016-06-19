@@ -40,7 +40,7 @@ if ($_GET)
                       <td><input type='submit' name='submit' value='OK' /></td></tr>
                     </table>
                   </form>
-               <li id='new_account_link'><a href='#'>Cr&eacute;er un nouveau compte</a>
+               <li id='new_account_link'><a href='create_account.php'>Cr&eacute;er un nouveau compte</a>
                  </ul>
             </li>";
     }
@@ -69,7 +69,7 @@ if ($_GET)
 	}
 ?>	
 					</select>
-					<input id="sort_by_type_submit" type="submit" value="order"/>
+					<input id="sort_by_type_submit" type="submit" value="Trier"/>
 				</form>	
 			</DIV>
 			<DIV>
@@ -116,7 +116,7 @@ if ($_GET)
 	else 
 		$objects = r0f_dbselect("SELECT PRODUCT.*, P_BRAND.* FROM PRODUCT, P_BRAND WHERE PRODUCT.p_brand_id = P_BRAND.pb_id AND PRODUCT.p_type_id = '".$_SESSION['type_filter']."' ORDER BY ".$order.";");
 	foreach ($objects as $car)
-		echo "<DIV class='content'><img src='".$car['p_image']."'></img><span class='carname'>".$car['pb_name']."&nbsp;".$car['p_name']."</span><span class='price'>$&nbsp;".$car['p_price']."</DIV>";
+		echo "<DIV class='content'><img src='".$car['p_image']."'></img><span class='brandname'>".$car['pb_name']."</span><span class='carname'>".$car['p_name']."</span><span class='price'>$&nbsp;".$car['p_price']."</DIV>";
 ?>	
 	</DIV>
 
