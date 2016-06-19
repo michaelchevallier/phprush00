@@ -1,6 +1,7 @@
 body 
 {
-	background:url("sources/images/background.png");
+	z-index: 5;
+	background:url("images/background.png");
 	background-color: #7F0606
 }
 @font-face
@@ -581,4 +582,62 @@ table
 	height:8vw;
 	border:1px solid white;
 	line-height: 8vw
+}
+#admin_select_task
+{
+	display: inline-block;
+	border:1px solid #7F0606;
+	font-family:arial;
+	color:white;
+	font-size: 1vw;
+	background-color: black;
+	text-align: center;
+	height: 2.5vw;
+	width: 15vw;
+	margin-top:  1vw;
+	margin-left: 1.6vw;
+}
+.commandes
+{
+	font-size: 1vw;
+	margin-top: 0.5vw;
+	margin-left: 5%;
+	width: 85%;
+	height: 1.25vw;
+	background-color: white;
+}
+.commandes div
+{
+	display: inline-block;
+}
+.admin_destroy
+{
+	float:right;
+	margin-top: -1.25vw;
+	margin-right: 1vw;
+	width:auto;
+	height:1.25vw;
+	border:1px solid white;
+}
+.compte
+{
+	font-size: 1vw;
+	margin-top: 0.5vw;
+	margin-left: 5%;
+	width:85%;
+	height: 1.25vw;
+	background-color: white;
+}
+.compte div
+{
+	display: inline-block;
+}
+.admin_view
+{
+	float:right;
+	margin-top: -1.25vw;
+	margin-right: 1vw;
+	width:auto;
+	height:1.25vw;
+	border:1px solid white;
 }
