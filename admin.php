@@ -93,10 +93,10 @@ session_start()
 	  						<option value="23">Progen</option>
 	  						<option value="24">Vapid</option>
 				</select></td></tr>
-			<tr><td>Mod&egrave;le:</td> <td><input type="text" name ="name" maxlength="15" /></td></tr>
+			<tr><td>Mod&egrave;le:</td> <td><input type="text" name ="name" maxlength="30" /></td></tr>
 			<br />
 			<br />
-			<tr><td>Prix :</td><td><input type="number" name="Price" maxlength="15"></td></tr>
+			<tr><td>Prix :</td><td><input type="number" name="Price" maxlength="30"></td></tr>
 			<br />
 			<br />
 			<tr><td>Places :</td><td><input type="number" name="capacity" maxlength="2"></td></tr>
