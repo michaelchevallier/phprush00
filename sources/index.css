@@ -1,0 +1,356 @@
+body 
+{
+	background:url("sources/images/background.png");
+	background-color: #7F0606
+}
+@font-face
+{
+	font-family: : SignPainter;
+	src:url(sources/MyHelvetica.ttf);
+}
+*{margin: 0; padding:0;}
+#table_scroll_menu
+{
+	font-size:1.2vw;
+}
+#login
+{
+	width:80%;
+}
+#pass
+{
+	width:80%;
+}
+#banner_img
+{
+	z-index:12;
+	margin-top: 0.5vmin;
+	width: 100%;
+	border-bottom: 3px solid #7F0606;
+}
+*{margin: 0; padding:0;}
+#body_menu
+{
+	font-family: SignPainter;
+	padding-bottom: 0.4vw;
+	padding-top: 0.6vw;
+	color: #868FC1;
+	font-size:1.5vw;
+	z-index:3;
+	position: absolute;
+	margin-left: 80%;
+	margin-top: -24%;
+	width :8%;
+	background-color: black;
+	border: 1px solid #7F0606;
+	text-align:center;
+}
+#body_menu:hover
+{
+	width:20%;
+	margin-left: 72.5%;
+}
+#body_menu:hover #scroll_menu 
+{
+	display:block;
+	text-align:left;
+}
+#body_menu:hover #core
+{
+	margin-top: 1%;
+}
+#connexion
+{
+	z-index:1;
+	display:inline-block;
+}
+#scroll_menu
+{
+	padding-top: 0.4vw;
+	display: none;
+}
+table
+{
+	color:#868FC1;
+}
+*{margin: 0;padding:0;}
+#panier_menu a:link, #panier_menu a:visited
+{
+	font-family: SignPainter;
+	padding-bottom: 0.4vw;
+	padding-top: 0.6vw;
+	padding-right: 1vw;
+	color: #868FC1;
+	font-size:1.5vw;
+	text-decoration:none;
+	position:absolute;
+	z-index:2;
+	margin-left: 60%;
+	margin-top: -24%;
+	width :8vw;
+	background-color: black;
+	border: 1px solid #7F0606;
+	text-align:right;
+}
+#new_account_link
+{
+	padding-top: 0.4vw;
+	color:#928F8F;
+	padding-left: 25%;
+	display: inline-block;
+	font-size: 1.2vw;
+}
+#new_account_link a:link, #new_account_link a:visited
+{
+	color:#868FC1;
+}
+#core
+{
+	top: 23.3vw;
+	left: 16.35%;
+	background-color: #2E0000;
+	z-index:11;
+	position:absolute;
+	width : 67%;
+	border: 2px solid #7F0606;
+	min-height: 50%;
+}
+#form
+{
+	display:inline-block;
+}
+#sort_by_type
+{
+	display: inline-block;
+	border:1px solid #7F0606;
+	font-family:arial;
+	color:white;
+	font-size: 1vw;
+	background-color: black;
+	text-align: center;
+	height: 2.5vw;
+	width: 10vw;
+	margin-top:  1vw;
+	margin-left: 1.6vw;
+}
+#sort_by_type_submit
+{
+	border-radius:3px;
+	border:1px solid #7F0606;
+	width:5vw;
+	height:2.5vw;
+	font-size: 1vw;
+	background-color: black;
+	font-family: arial;
+	color:white;
+}
+#sort_by
+{
+	position:absolute;
+	border:1px solid #7F0606;
+	font-family:arial;
+	color:white;
+	font-size: 1vw;
+	background-color: black;
+	text-align: center;
+	height: 2.5vw;
+	width: 11vw;
+	margin-top: -2.5vw;
+	margin-left: 46vw;
+	margin-bottom: 1.25vw;
+}
+#sort_by_submit
+{
+	position:absolute;
+	border-radius:3px;
+	border:1px solid #7F0606;
+	width:5vw;
+	height:2.5vw;
+	font-size: 1vw;
+	align-items: top;
+	background-color: black;
+	font-family: arial;
+	color:white;
+	margin-top: -2.5vw;
+	margin-left: 57.3vw;
+}
+
+.content
+{
+	display:inline-block;
+	background-color: #7F0606;
+	margin-left: 1.25vw;
+	margin-top: 1.25vw;
+	border: 1px solid #868FC1;
+	position:relative;
+	width: 20vw;
+	height: 20vw;
+	z-index:1;
+	margin-bottom: 1.25vw;
+}
+.panier_content
+{
+	display:block;
+	background-color: #7F0606;
+	margin-left: 1.25vw;
+	border: 1px solid #C2BDBD;
+	position:relative;
+	width: 15vw;
+	height: 15vw;
+	z-index:2;
+	margin-bottom: 1.25vw;
+	border-radius: 8px;
+}
+#panier
+{
+	margin-top: 3vw;
+	margin-left: 12vw;
+	font-size : 6vw;
+	background: -webkit-linear-gradient(white, #928F8F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: -2px -2px #868FC1;
+	font-family: SignPainter;
+}
+#panier_black
+{
+	margin-left: 4vw;
+	height: 5vw;
+	width: auto;
+	z-index: 1;
+	margin-right: 2vw;
+}
+#panier_black_menu
+{
+	z-index: 1;
+	position:absolute;
+	margin-top: -0.35vw;
+	margin-left: -6.75vw;
+	height: 2vw;
+	width: auto;
+}
+.panier_item_name
+{
+	background-color: #7F0606;
+	margin-left: 17.5vw;
+	margin-top: -16.40vw;
+	border: 1px solid #C2BDBD;
+	border-radius: 8px;
+	position:absolute;
+	width: 25vw;
+	height: 15vw;
+	z-index:2;
+	margin-bottom: 1.25vw;
+	text-align: center;
+	line-height: 15vw;
+	font-family: SignPainter;
+	font-size:4vw;
+	color:#868FC1;
+	z-index:3;
+}
+.panier_item_color_text
+{
+	z-index:2;
+	line-height: 3vw;
+	background-color: #7F0606;
+	padding-top: 0.3vw;
+	border: 1px solid #C2BDBD;
+	margin-top: -16.4vw;
+	margin-left: 43.8vw;
+	height: 14.75vw;
+	width: 12vw;
+	position:absolute;
+	margin-right: 17.5vw;
+	text-align: center;
+	color:#868FC1;
+	font-family: SignPainter;
+	font-size: 1.7vw;
+	border-radius: 8px;
+}
+.panier_item_color
+{
+	z-index:1;
+	position:absolute;
+	margin-top: 4.5vw;
+	margin-left: -4.75vw;
+	border: 1px solid #C2BDBD;
+	background-color: white;
+	width:5vw;
+	height:5vw;
+	border-radius: 8px;
+}
+.destroy
+{
+	position:absolute;
+	background: :url(sources/images/panier_red.png);
+	width:6vw;
+	height: auto;
+	margin-left: 15vw;
+	margin-top: -3vw;
+	background: white;
+}
+.price
+{
+	z-index: 1;
+	background-color: black;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	line-height: 3vw;
+	height:2.6vw;
+	margin-top: 17.4vw;
+	color:white;
+	font-family: SignPainter;
+	font-size:2.5vw;
+}
+#checkout_total
+{
+	background-color: #7F0606;
+	margin-left: 1.25vw;
+	border: 1px solid #C2BDBD;
+	border-radius: 8px;
+	position:absolute;
+	width: 25vw;
+	height: 5vw;
+	z-index:2;
+	margin-bottom: 1.25vw;
+	text-align: center;
+	line-height: 5vw;
+	font-family: SignPainter;
+	font-size:4vw;
+	color:#868FC1;
+	z-index:3;
+}
+#checkout_total_value
+{
+	display: block;
+	position:relative;
+	margin-left: 27.5vw;
+	background-color: #7F0606;
+	border: 1px solid #C2BDBD;
+	font-family: SignPainter;
+	font-size:3vw;
+	line-height: 5vw;
+	text-align: center;
+	color:#868FC1;
+	width: 15vw;
+	height: 5vw;
+	z-index:1;
+	margin-bottom: 1.25vw;
+	border-radius: 8px;
+}
+#valid_panier
+{
+	position: absolute;
+	font-family: SignPainter;
+	font-size:2.25vw;
+	color:white;
+	line-height: 5vw;
+	text-align: center;
+	background-color: green;
+	width: 12.25vw;
+	margin-left: 1.25vw;
+	margin-top: -3.25vw;
+	height:5vw;
+	border-radius: -31vw;
+}
