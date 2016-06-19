@@ -8,8 +8,8 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="sources/index.css" />
 </HEAD>
 <BODY>
-	<DIV id="banner">
-		<img id="banner_img" SRC="sources/images/banner-img.png" alt="Legendary Motorsport"/>
+	<DIV id="banner"><a href="index.php">
+		<img id="banner_img" SRC="sources/images/banner-img.png" alt="Legendary Motorsport"/></a>
 		<ul id="panier_menu"><a href="panier.php">Panier<img id="panier_black_menu" src="sources/images/panier_black.jpg"></a></ul>
 		<ul id="body_menu">
 			<li id="connexion">Connexion
@@ -20,7 +20,7 @@ session_start();
 					<td><input id="connexion" type="submit" name="submit" value="OK" /></td></tr>
 				</table>
 				</form>
-					<li id="new_account_link"><a href="#">Cr&eacute;er un nouveau compte</a>
+					<li id="new_account_link"><a href="create_account.php">Cr&eacute;er un nouveau compte</a>
 				</ul>
 			</li>
 		</ul>
@@ -36,7 +36,7 @@ session_start();
 		foreach ($cart as $product => $value)
 		{
 			echo "<tr>
-					<td class='panier_content'><img src='".$value['img']."' /></td>
+					<td class='panier_content'><img src='".$value['img']."' height=100%/></td>
 					<td class='panier_item_name'>".$value['brand']."&nbsp;".$value['name']."</td>
 					<td class='panier_item_color_text'>".$value['color']."<span class='panier_item_color' style='background-color:".$value['color'].";'></span></td>
 					<td><a href='r0_removefromcart.php?brand=".$value['brand']."&name=".$value['name']."&color=".$value['color']."'><img class='destroy' src='sources/images/trash.jpg'></a></td>
@@ -51,14 +51,14 @@ session_start();
 		if ($_SESSION['logged'])
 			echo "<input id='valid_panier' type='submit' name='submit' value='Valider le panier' />";
 		else
-			echo "<input id='valid_panier' type='submit' name='submit' style='font-size:0.9vw;line-height:2vw;' value='Cliquez ici pour vous inscrire ou 
-merci de vous connecter.' disabled />";
+			echo "<a href='create_account.php' id='valid_panier_inscription' type='submit'>Cliquez ici pour vous inscrire 
+		ou merci de vous connecter.</a>";
 		echo "		</form>
 				</td>
 			</tr>";
 	}
     else
-        echo "Your cart is empty";
+        echo "Votre panier est vide.";
 ?>				
 		</table>
 	</DIV>

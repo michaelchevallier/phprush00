@@ -81,18 +81,18 @@ session_start();
 	else
 		echo "<a href='?".$gets."&color=white#core'><DIV id='WHITE'></DIV></a>";
 	echo "</span>
-		<DIV id='stats'><span>Vehicle stats</span>
+		<DIV id='stats'><span>Statistiques du v&eacute;hicule</span>
 		<table id='description_stats_table'>
-			<tr><td class='description_stats'>Top Speed :</td><td class='description_stats_numbers'>".$_GET['topspeed']." / 5</td></tr>
-			<tr><td class='description_stats'>Acceleration :</td><td class='description_stats_numbers'>".$_GET['acceleration']." / 5</td></tr>
-			<tr><td class='description_stats'>Braking :</td><td class='description_stats_numbers'>".$_GET['brake']." / 5</td></tr>
-			<tr><td class='description_stats'>Traction :</td><td class='description_stats_numbers'>".$_GET['traction']." / 5</td></tr>
+			<tr><td class='description_stats'>Vitesse maximum :</td><td class='description_stats_numbers'>".$_GET['topspeed']." / 5</td></tr>
+			<tr><td class='description_stats'>Acc&eacute;leration :</td><td class='description_stats_numbers'>".$_GET['acceleration']." / 5</td></tr>
+			<tr><td class='description_stats'>Freinage :</td><td class='description_stats_numbers'>".$_GET['brake']." / 5</td></tr>
+			<tr><td class='description_stats'>Tenue de route :</td><td class='description_stats_numbers'>".$_GET['traction']." / 5</td></tr>
         </table>
         </DIV>";
 	if ($_GET['color'])
-        echo "<a href='r0_add2cart.php?".$gets."&color=".$_GET['color']."'><DIV id ='description_order'>Order<img id='description_panier_black' src='sources/images/panier_black.jpg' /></DIV></a>";
+        echo "<a style ='text-decoration:none;' href='r0_add2cart.php?".$gets."&color=".$_GET['color']."'><DIV id ='description_order'>Order<img id='description_panier_black' src='sources/images/panier_black.jpg' /></DIV></a>";
     else
-        echo "<DIV id ='description_pick_color'>Pick a color</DIV>";
+        echo "<DIV id ='description_pick_color'>Choisissez une couleur</DIV>";
 ?>
  </body>
 </html>
