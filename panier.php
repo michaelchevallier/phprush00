@@ -36,9 +36,9 @@ session_start();
 		foreach ($cart as $product => $value)
 		{
 			echo "<tr>
-					<td class='panier_content'></td>
+					<td class='panier_content'><img src='".$value['img']."' /></td>
 					<td class='panier_item_name'>".$value['brand']."&nbsp;".$value['name']."</td>
-					<td class='panier_item_color_text'>".$value['color']."<span class='panier_item_color'></span></td>
+					<td class='panier_item_color_text'>".$value['color']."<span class='panier_item_color' style='background-color:".$value['color'].";'></span></td>
 					<td><a href='r0_removefromcart.php?brand=".$value['brand']."&name=".$value['name']."&color=".$value['color']."'><img class='destroy' src='sources/images/trash.jpg'></a></td>
 				</tr>";
 			$total_price += $value['price'];
@@ -51,8 +51,8 @@ session_start();
 		if ($_SESSION['logged'])
 			echo "<input id='valid_panier' type='submit' name='submit' value='Valider le panier' />";
 		else
-			echo "Connectez vous pour valider votre panier";
-	
+			echo "<input id='valid_panier' type='submit' name='submit' style='font-size:0.9vw;line-height:2vw;' value='Cliquez ici pour vous inscrire ou 
+merci de vous connecter.' disabled />";
 		echo "		</form>
 				</td>
 			</tr>";

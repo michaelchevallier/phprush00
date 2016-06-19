@@ -49,37 +49,37 @@ session_start();
 	   <DIV id='description_image_div'><img id='description_image' src='".$_GET['img']."'>
 		  <span id='description_colors'>Available colors<br />";
 	if ($_GET['color'] == 'red')
-		echo "<a href='?".$gets."&color=red'><DIV id='RED' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=red#core'><DIV id='RED' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=red'><DIV id='RED'></DIV></a>";
+		echo "<a href='?".$gets."&color=red#core'><DIV id='RED'></DIV></a>";
 	if ($_GET['color'] == 'pink')
-		echo "<a href='?".$gets."&color=pink'><DIV id='PINK' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=pink#core'><DIV id='PINK' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=pink'><DIV id='PINK'></DIV></a>";
+		echo "<a href='?".$gets."&color=pink#core'><DIV id='PINK'></DIV></a>";
 	if ($_GET['color'] == 'orange')
-		echo "<a href='?".$gets."&color=orange'><DIV id='ORANGE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=orange#core'><DIV id='ORANGE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=orange'><DIV id='ORANGE'></DIV></a>";
+		echo "<a href='?".$gets."&color=orange#core'><DIV id='ORANGE'></DIV></a>";
 	if ($_GET['color'] == 'yellow')
-		echo "<a href='?".$gets."&color=yellow'><DIV id='YELLOW' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=yellow#core'><DIV id='YELLOW' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=yellow'><DIV id='YELLOW'></DIV></a>";
+		echo "<a href='?".$gets."&color=yellow#core'><DIV id='YELLOW'></DIV></a>";
 	if ($_GET['color'] == 'green')
-		echo "<a href='?".$gets."&color=green'><DIV id='GREEN' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=green#core'><DIV id='GREEN' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=green'><DIV id='GREEN'></DIV></a>";
+		echo "<a href='?".$gets."&color=green#core'><DIV id='GREEN'></DIV></a>";
 	if ($_GET['color'] == 'blue')
-		echo "<a href='?".$gets."&color=blue'><DIV id='BLUE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=blue#core'><DIV id='BLUE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=blue'><DIV id='BLUE'></DIV></a>";
+		echo "<a href='?".$gets."&color=blue#core'><DIV id='BLUE'></DIV></a>";
 	if ($_GET['color'] == 'black')
-		echo "<a href='?".$gets."&color=black'><DIV id='BLACK' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=black#core'><DIV id='BLACK' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=black'><DIV id='BLACK'></DIV></a>";
+		echo "<a href='?".$gets."&color=black#core'><DIV id='BLACK'></DIV></a>";
 	if ($_GET['color'] == 'white')
-		echo "<a href='?".$gets."&color=white'><DIV id='WHITE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
+		echo "<a href='?".$gets."&color=white#core'><DIV id='WHITE' style='box-shadow:0px 0px 5px 15px white;'></DIV></a>";
 	else
-		echo "<a href='?".$gets."&color=white'><DIV id='WHITE'></DIV></a>";
+		echo "<a href='?".$gets."&color=white#core'><DIV id='WHITE'></DIV></a>";
 	echo "</span>
 		<DIV id='stats'><span>Vehicle stats</span>
 		<table id='description_stats_table'>
