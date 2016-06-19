@@ -33,7 +33,7 @@
 			</li>
 		</ul>
 	</DIV>
-	<DIV id="core">
+	<DIV id="core" style="min-height: 65vmin;">
 		<form action="register.php" method="POST">
 			<table id="register_table">
 			<tr></tr>
