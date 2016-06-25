@@ -210,6 +210,12 @@ table
 	z-index:2;
 	margin-bottom: 1.25vw;
 }
+.panier_content img
+{
+	width:100%;
+	height:auto;
+}
+
 #panier
 {
 	margin-top: 3vw;
@@ -693,4 +699,14 @@ table
 	width:35vw;
 	line-height: 3vw;
 
+}
+
+#info_message
+{
+    color:red;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    line-height:3vw;
+    vertical-align:middle;
 }

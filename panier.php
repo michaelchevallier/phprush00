@@ -8,23 +8,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="sources/index.css" />
 </HEAD>
 <BODY>
-	<DIV id="banner"><a href="index.php">
-		<img id="banner_img" SRC="sources/images/banner-img.png" alt="Legendary Motorsport"/></a>
-		<ul id="panier_menu"><a href="panier.php">Panier<img id="panier_black_menu" src="sources/images/panier_black.jpg"></a></ul>
-		<ul id="body_menu">
-			<li id="connexion">Connexion
-				<ul id="scroll_menu">
-				<form action="create.php" method="post">
-					<table id="table_scroll_menu"><tr><td>Identifiant: </td><td><input type="text" name="login" id="login"/></td></tr>
-					<tr><td>Mot de passe: </td><td><input type="password" name="passwd" id="pass"/></td>
-					<td><input id="connexion" type="submit" name="submit" value="OK" /></td></tr>
-				</table>
-				</form>
-					<li id="new_account_link"><a href="create_account.php">Cr&eacute;er un nouveau compte</a>
-				</ul>
-			</li>
-		</ul>
-	</DIV>
+	<?php include("r0p_banner.php"); ?>
 	<DIV id="core" style="background-color: black;">
 		<DIV id="panier"><img id="panier_black" src="sources/images/panier_black.jpg">Votre Panier<br /><br /></DIV>
 		<table class="panier_row">
@@ -36,7 +20,7 @@ session_start();
 		foreach ($cart as $product => $value)
 		{
 			echo "<tr>
-					<td class='panier_content'><img src='".$value['img']."' height=100%/></td>
+					<td class='panier_content'><img src='".$value['img']."' /></td>
 					<td class='panier_item_name'>".$value['brand']."&nbsp;".$value['name']."</td>
 					<td class='panier_item_color_text'>".$value['color']."<span class='panier_item_color' style='background-color:".$value['color'].";'></span></td>
 					<td><a href='r0_removefromcart.php?brand=".$value['brand']."&name=".$value['name']."&color=".$value['color']."'><img class='destroy' src='sources/images/trash.jpg'></a></td>
@@ -47,18 +31,18 @@ session_start();
 				<td id='checkout_total'>Total</td>
 				<td id='checkout_total_value'>$".$total_price."</td>
 				<td>
-					<form action='checkout.php' method='get'>";
+					<form action='r0_checkout.php' method='get'>";
 		if ($_SESSION['logged'])
 			echo "<input id='valid_panier' type='submit' name='submit' value='Valider le panier' />";
 		else
-			echo "<a href='create_account.php' id='valid_panier_inscription' type='submit'>Cliquez ici pour vous inscrire 
-		ou merci de vous connecter.</a>";
+			echo "<a href='register.php' id='valid_panier_inscription' type='submit'>Cliquez ici pour vous inscrire
+        ou merci de vous connecter.</a>";
 		echo "		</form>
 				</td>
 			</tr>";
 	}
     else
-        echo "Votre panier est vide.";
+        echo "<script>window.location = './index.php?info=Votre\ panier\ est\ vide';</script>";
 ?>				
 		</table>
 	</DIV>
